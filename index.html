@@ -14,18 +14,18 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Assignment Emergency Hotline</title>
 </head>
-<body>
+<body class="w-[1920px] mx-auto">
     <nav class="flex flex-row justify-between items-center mx-12.5 my-[25px]">
         <div class="flex flex-row">
             <img class="w-[50px] h-[50px] mr-3" src="./assets/logo.png" alt="Logo">
-            <h1 class="text-lg font-bold text-[#006747] leading-6">Emergency <br> Service</h1>
+            <h1 class="text-xl font-extrabold text-[#006747] leading-6">Emergency <br> Service</h1>
         </div>
         <div>
-            <button class="btn bg-[#e2fced] rounded-full">
+            <button class="btn bg-[#41ff6b1a] px-6 rounded-full">
                 <p class=" text-base font-medium">0</p>
                 <img class="h-7.5 w-7.5" src="./assets/heart.png" alt="heart">
             </button>
-            <button class="btn bg-[#e2fced] mx-[20px] rounded-full">
+            <button class="btn bg-[#41ff6b1a] mx-[20px] px-6 rounded-full">
                 <p class=" text-base font-medium">100</p>
                 <img class="h-7.5 w-7.5" src="./assets/coin.png" alt="coin">
             </button>
@@ -41,5 +41,57 @@
         <h1 class="text-[40px] text-white font-bold mb-2">Emergency Service Directory</h1>
         <p class="text-[20px] text-white font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
      </section>
+
+     <!-- Main Section -->
+      <main class="flex h-[1274px] mx-auto pt-12 pr-[62px] pb-[86px] pl-[58px]">
+        <div class="border-2 h-[1140px] w-[80%] grid grid-cols-3">
+            <div class="w-[435px] h-[360px] p-5 border-2">
+                <div class="flex justify-between items-center mb-4">
+                    <img class="h-[60px] w-[60px] bg-[#FFE3E2] rounded-2xl" src="./assets/emergency.png" alt="Light">
+                    <button class="btn bg-white border-none text-xl text-gray-500">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
+                </div>
+                <h2 class="text-2xl font-bold mb-0">National Emergency Number</h2>
+                <p class="text-lg text-gray-600 font-normal mb-6">National Emergency</p>
+                <h3 class="text-2xl font-bold">999</h3>
+                <button class="btn text-sm text-gray-500 border-none mb-6 rounded-full">All</button>
+                <br>
+                <button class="btn bg-white px-[63.1px] rounded-lg"><i class="fa-regular fa-clone"></i>Copy</button>
+                <button class="btn  bg-[#00A63E] text-white px-[63.1px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+            <div class="w-[435px] h-[360px] p-5 border-2">
+                <div class="flex justify-between items-center mb-4">
+                    <img class="h-[60px] w-[60px] bg-[#DFEFFF] rounded-2xl" src="./assets/police.png" alt="police">
+                    <button class="btn bg-white border-none text-xl text-gray-500">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
+                </div>
+                <h2 class="text-2xl font-bold mb-0">Police Helpline Number</h2>
+                <p class="text-lg text-gray-600 font-normal mb-6">Police</p>
+                <h3 class="text-2xl font-bold">999</h3>
+                <button class="btn text-sm text-gray-500 border-none mb-6 rounded-full">Police</button>
+                <br>
+                <button class="btn bg-white px-[63.1px] rounded-lg"><i class="fa-regular fa-clone"></i>Copy</button>
+                <button class="btn  bg-[#00A63E] text-white px-[63.1px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+            <div class="w-[435px] h-[360px]  p-5 border-2">
+                <div class="flex justify-between items-center mb-4">
+                    <img class="h-[60px] w-[60px] bg-[#FFE3E2] rounded-2xl" src="./assets/fire-service.png" alt="fire-service">
+                    <button class="btn bg-white border-none text-gray-500">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
+                </div>
+                <h2 class="text-2xl font-bold mb-0">Fire Service Number</h2>
+                <p class="text-lg text-gray-600 font-normal mb-6">Fire Service</p>
+                <h3 class="text-2xl font-bold">999</h3>
+                <button class="btn text-sm text-gray-500 border-none mb-6 rounded-full">Fire</button>
+                <br>
+                <button class="btn bg-white px-[63.1px] rounded-lg"><i class="fa-regular fa-clone"></i>Copy</button>
+                <button class="btn  bg-[#00A63E] text-white px-[63.1px] rounded-lg"><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+        </div>
+        <aside class="border-2 border-red-200 h-[1140px] w-[20%]"></aside>
+      </main>
 </body>
 </html>
