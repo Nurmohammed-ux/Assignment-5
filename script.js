@@ -65,7 +65,8 @@ buttons.forEach(function (event) {
 
     coins -= 20;
     coinCount.innerText = coins;
-    alert("Calling" + " " + serviceName + " " + serviceNumber);
+    alert("Calling" + " " + serviceName + " - " + 
+      serviceNumber);
 
     addToHistory(serviceName, serviceNumber);
   });
@@ -102,13 +103,21 @@ document.addEventListener("click", function (e) {
   const targetSelector = btn.getAttribute("data-copy-target");
   const targetEl = card.querySelector(targetSelector);
 
-  console.log(card,targetSelector,targetEl)
+  console.log(card, targetSelector, targetEl);
 
   if (targetEl) {
     const text = targetEl.innerText.trim();
 
     copyToClipboard(text).then(function () {
       const span = btn.querySelector("span");
+      alert(`Copied : ${text}`);
+
+      const countEl = document.getElementById("copy-count");
+      if (countEl) {
+        let currentCopyCount = parseInt(countEl.innerText) || 0;
+        currentCopyCount += 3; 
+        countEl.innerText = currentCopyCount;
+      }
 
       if (!span) {
         const span = document.createElement("span");
