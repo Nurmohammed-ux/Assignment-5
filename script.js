@@ -23,12 +23,12 @@ function addToHistory(serviceName, serviceNumber) {
 
   const left = document.createElement("div");
   left.innerHTML = `
-                    <h3 class="text-lg font-semibold mb-0">${serviceName}</h3>
-                    <p class="text-lg font-normal text-gray-500">${serviceNumber}</p>
+      <h3 class="text-lg font-semibold w-[200px] mb-0">${serviceName}</h3>
+      <p class="text-lg font-normal text-gray-500">${serviceNumber}</p>
     `;
 
   const serviceTime = document.createElement("p");
-  serviceTime.className = "ml-auto mr-3";
+  serviceTime.className = "w-[89px] ml-auto mr-3";
   const time = new Date();
   serviceTime.innerText = time.toLocaleTimeString();
 
@@ -128,12 +128,12 @@ document.addEventListener("click", function (e) {
       const originalText = span.innerText;
       span.innerText = " Copied!";
 
-      btn.classList.add("bg-green-600", "text-white");
+      btn.classList.add("bg-[#00A63E]", "text-white");
       btn.classList.remove("bg-white", "text-gray-500");
 
       setTimeout(function () {
         span.textContent = originalText;
-        btn.classList.remove("bg-green-600", "text-white");
+        btn.classList.remove("bg-[#00A63E]", "text-white");
         btn.classList.add("bg-white", "text-gray-500");
       }, 1500);
     });
